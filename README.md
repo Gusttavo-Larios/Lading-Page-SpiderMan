@@ -16,8 +16,7 @@ Ferramentas utilizadas neste projeto
 
 ## Para Executar
 
-1. Clone o repositório: <br>`git clone https://github.com/Gusttavo-Larios/Lading-Page-SpiderMan.git`
-<br>
-2. Instale as dependências: <br>`npm install`
-<br>
-3. Execute o projeto: <br>`npm start`
+1. Clone o repositório:
+`git clone https://github.com/Gusttavo-Larios/Lading-Page-SpiderMan.git`
+2. Instale as dependências: `npm install`
+3. Execute o projeto: `npm start`
