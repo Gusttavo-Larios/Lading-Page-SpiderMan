@@ -1,0 +1,154 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(11, 12, 16, 0.6) 0%,
+      rgba(11, 12, 16, 0.4) 52.08%,
+      rgba(12, 12, 16, 0.6) 100%
+    ),
+    url(../assets/images/background.svg);
+  background-size: cover;
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+button:hover,
+a:hover {
+  transform: scale(1.1);
+}
+
+.App header {
+  width: 95%;
+  height: 5rem;
+  background-color: rgba(29, 29, 29, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: fixed;
+  right: 0;
+  animation: translate-vertical 2s;
+}
+
+.App header img {
+  width: 2rem;
+  position: absolute;
+  left: 47%;
+}
+
+.App header .container-options {
+  width: 2rem;
+  position: absolute;
+  right: 20rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.App header .container-options a,
+a:active {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.App aside {
+  width: 5%;
+  height: 100vh;
+  background: rgba(29, 29, 29, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: translate-vertical 2s;
+}
+
+@keyframes translate-vertical {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.App aside .container-social-media {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.App aside .container-social-media button {
+  width: max-content;
+  background-color: transparent;
+  border: none;
+}
+
+.App aside .container-social-media .social-media {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.App aside .search {
+  width: max-content;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 4rem;
+}
+
+.App aside .search .icon {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.App main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: main-scale 2s;
+}
+
+@keyframes main-scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.App main button {
+  background: #1d1d1d;
+  border: 2px solid #ec111a;
+  border-radius: 1rem 0 0 0;
+  display: flex;
+  align-items: center;
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #f9f9f9;
+  margin-top: 3rem;
+  padding: 0.5rem 1.5rem;
+}
